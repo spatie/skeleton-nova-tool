@@ -14,8 +14,8 @@ class Tool extends BaseTool
      */
     public function boot()
     {
-        Nova::script('{{ component }}', __DIR__.'/../dist/js/tool.js');
-        Nova::style('{{ component }}', __DIR__.'/../dist/css/tool.css');
+        Nova::script(':package_name', __DIR__.'/../dist/js/tool.js');
+        Nova::style(':package_name', __DIR__.'/../dist/css/tool.css');
     }
 
     /**
@@ -25,6 +25,6 @@ class Tool extends BaseTool
      */
     public function renderNavigation()
     {
-        return view('{{ component }}::navigation');
+        return view(':package_name::navigation');
     }
 }
