@@ -48,10 +48,6 @@ public function register()
 
 Click on the "Application log" menu item in your Nova app to see the log.
 
-### Authentication
-
-// TO DO
-
 ### Testing
 
 ``` bash
