@@ -60,7 +60,7 @@ composer require :vendor/:package_name
 Next up, you must register the tool with Nova. This is typically done in the `tools` method of the `NovaServiceProvider`.
 
 ```php
-// in app/Providers/NovaServiceProvder.php
+// in app/Providers/NovaServiceProvider.php
 
 // ...
 
