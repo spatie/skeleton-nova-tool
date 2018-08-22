@@ -30,18 +30,18 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\TailTool\\": "src/"
+            ":namespace_vendor\\:namespace_tool_name\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\TailTool\\Tests\\": "tests"
+            ":namespace_vendor\\:namespace_tool_name\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\TailTool\\TailToolServiceProvider"
+                ":namespace_vendor\\:namespace_tool_name\\TailToolServiceProvider"
             ]
         }
     },

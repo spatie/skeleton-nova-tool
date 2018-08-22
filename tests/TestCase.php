@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\TailTool\Tests;
+namespace :namespace_vendor\:namespace_tool_name\Tests;
 
 use Illuminate\Support\Facades\Route;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Spatie\TailTool\TailToolServiceProvider;
+use :namespace_vendor\:namespace_tool_name\TailToolServiceProvider;
 
 abstract class TestCase extends Orchestra
 {

@@ -12,6 +12,8 @@
  - `:package_name` (example: 'nova-tail-tool')
  - `:package_description` (example: 'A tool to tail the log')
  - `:vendor` (example: 'spatie')
+ - `:namespace_vendor` (example: 'Spatie')
+ - `:namespace_tool_name` (example: 'TailTool')
  
 
 This is where your description should go. Try and limit it to a paragraph or two.
@@ -37,7 +39,7 @@ public function register()
 {
     Nova::tools([
         // ...
-        new \Spatie\TailTool\TailTool(),
+        new \:namespace_vendor\:namespace_tool_name\Tool(),
     ]);
 }
 ```
@@ -66,7 +68,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ### Security
 
-If you discover any security related issues, please email freek@spatie.be instead of using the issue tracker.
+If you discover any security related issues, please email :author_email instead of using the issue tracker.
 
 ## Postcardware
 

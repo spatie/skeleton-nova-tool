@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\TailTool\Tests;
+namespace :namespace_vendor\:namespace_tool_name\Tests;
 
-use Spatie\TailTool\Http\Controllers\ToolController;
-use Spatie\TailTool\TailTool;
+use :namespace_vendor\:namespace_tool_name\Http\Controllers\ToolController;
+use :namespace_vendor\:namespace_tool_name\:namespace_tool_name;
 use Symfony\Component\HttpFoundation\Response;
 
 class ToolControllerTest extends TestCase
