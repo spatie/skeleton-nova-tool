@@ -1,18 +1,17 @@
 <?php
 
-namespace Spatie\NovaTool\Middleware;
+namespace Spatie\TailTool\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use Spatie\NovaTool\NovaTool;
-use Spatie\NovaTailTool\NovaTailTool;
+use Spatie\TailTool\TailTool;
 use Symfony\Component\HttpFoundation\Response;
 
-class Authenticate
+class Authorize
 {
     public function handle(Request $request, Closure $next): Response
     {
-        return NovaTool::check($request)
+        return app(TailTool::class)->authorize($request)
             ? $next($request)
             : abort(403);
     }

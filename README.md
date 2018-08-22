@@ -1,24 +1,29 @@
-# :package_description
+# :description
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/nova-backup-tool.svg?style=flat-square)](https://packagist.org/packages/spatie/nova-backup-tool)
-[![Build Status](https://img.shields.io/travis/spatie/nova-backup-tool/master.svg?style=flat-square)](https://travis-ci.org/spatie/nova-backup-tool)
-[![Quality Score](https://img.shields.io/scrutinizer/g/spatie/nova-backup-tool.svg?style=flat-square)](https://scrutinizer-ci.com/g/spatie/nova-backup-tool)
-[![Total Downloads](https://img.shields.io/packagist/dt/spatie/nova-backup-tool.svg?style=flat-square)](https://packagist.org/packages/spatie/nova-backup-tool)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/nova-tail-tool.svg?style=flat-square)](https://packagist.org/packages/spatie/nova-tail-tool)
+[![Build Status](https://img.shields.io/travis/spatie/nova-tail-tool/master.svg?style=flat-square)](https://travis-ci.org/spatie/nova-tail-tool)
+[![Quality Score](https://img.shields.io/scrutinizer/g/spatie/nova-tail-tool.svg?style=flat-square)](https://scrutinizer-ci.com/g/spatie/nova-tail-tool)
+[![Total Downloads](https://img.shields.io/packagist/dt/spatie/nova-tail-tool.svg?style=flat-square)](https://packagist.org/packages/spatie/nova-tail-tool)
 
-**Note:** Replace ```:author_name``` ```:author_username``` ```:author_email``` ```:package_name``` ```:tool_name``` ```:package_description``` with their correct values in [README.md](README.md), [CHANGELOG.md](CHANGELOG.md), [CONTRIBUTING.md](CONTRIBUTING.md), [LICENSE.md](LICENSE.md) and [composer.json](composer.json) files, then delete this line.
+**Note:** Replace these variables in all files of the project and delete this paragraph:
+ - `:author_name` (example: 'Freek Van der Herten')
+ - `:author_username` (example: 'freekmurze')
+ - `:author_email` (example: 'freek@spatie.be')
+ - `:package_name` (example: 'nova-tail-tool')
+ - `:package_description` (example: 'A tool to tail the log')
+ 
 
-This is where your description should go. Try and limit it to a paragraph or two and add a screenshot.
+This is where your description should go. Try and limit it to a paragraph or two.
 
-## Requirements
-
-The requirements for installing this tool.
+Add a screenshot of the tool here.
 
 ## Installation
 
-You can install the package via composer:
+You can install the package in to a Laravel app that uses [Nova](https://nova.laravel.com) via composer:
 
 ```bash
-composer require spatie/:package_name
+composer require spatie/nova-tail-tool
+```
 
 Next up, you must register the tool with Nova. This is typically done in the `register` method of the `NovaServiceProvider`.
 
@@ -31,30 +36,18 @@ public function register()
 {
     Nova::tools([
         // ...
-        new \Spatie\:tool_name\:tool_name(),
+        new \Spatie\TailTool\TailTool(),
     ]);
 }
 ```
 
 ## Usage
 
-Click on the "Backups" menu item in your Nova app to see the log.
+Click on the "Application log" menu item in your Nova app to see the log.
 
 ### Authentication
 
-By default the tool can only be seen and used in the local environment. To define a more specific access policy for the tool, you should use the `:tool_name::auth` method. The `auth` method accepts a callback which should return true or false, indicating whether the user should have access to the tool. Typically, you should call `NovaTool::auth` in the boot method a service provider:
-
-```php
-// in a service provider
-
-use Spatie\:tool_name\:tool_name;
-
-// ...
-
-:tool_name::auth(function ($request) {
-    // return true / false;
-});
-```
+// TO DO
 
 ### Testing
 
@@ -84,7 +77,8 @@ We publish all received postcards [on our company website](https://spatie.be/en/
 
 ## Credits
 
-- [:author_name](https://github.com/:author_username)
+- [Freek Van der Herten](https://github.com/freekmurze)
+- [Sebastian De Deyne](https://github.com/sebastiandedeyne)
 - [All Contributors](../../contributors)
 
 ## Support us

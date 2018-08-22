@@ -1,8 +1,8 @@
 Nova.booting((Vue, router) => {
     router.addRoutes([
         {
-            name: 'NovaTool',
-            path: '/NovaTool',
+            name: '{{ component }}',
+            path: '/{{ component }}',
             component: require('./components/Tool'),
         },
     ])

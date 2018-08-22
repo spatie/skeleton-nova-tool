@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\:tool_name\Tests;
+namespace Spatie\TailTool\Tests;
 
+use Illuminate\Support\Facades\Route;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Spatie\:tool_name\NovaTool;
-use Spatie\:tool_name\NovaToolServiceProvider;
+use Spatie\TailTool\TailToolServiceProvider;
 
 abstract class TestCase extends Orchestra
 {
@@ -12,20 +12,13 @@ abstract class TestCase extends Orchestra
     {
         parent::setUp();
 
-        NovaTool::auth(function() {
-           return true;
-        });
-    }
-
-    protected function getEnvironmentSetUp($app)
-    {
-
+        Route::middlewareGroup('nova', []);
     }
 
     protected function getPackageProviders($app)
     {
         return [
-            NovaToolServiceProvider::class,
+            TailToolServiceProvider::class,
         ];
     }
 }
