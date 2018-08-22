@@ -41,7 +41,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                ":namespace_vendor\\:namespace_tool_name\\TailToolServiceProvider"
+                ":namespace_vendor\\:namespace_tool_name\\ToolServiceProvider"
             ]
         }
     },
