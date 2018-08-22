@@ -1,9 +1,9 @@
 # :description
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/nova-tail-tool.svg?style=flat-square)](https://packagist.org/packages/spatie/nova-tail-tool)
-[![Build Status](https://img.shields.io/travis/spatie/nova-tail-tool/master.svg?style=flat-square)](https://travis-ci.org/spatie/nova-tail-tool)
-[![Quality Score](https://img.shields.io/scrutinizer/g/spatie/nova-tail-tool.svg?style=flat-square)](https://scrutinizer-ci.com/g/spatie/nova-tail-tool)
-[![Total Downloads](https://img.shields.io/packagist/dt/spatie/nova-tail-tool.svg?style=flat-square)](https://packagist.org/packages/spatie/nova-tail-tool)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/:vendor/:package_name.svg?style=flat-square)](https://packagist.org/packages/:vendor/:package_name)
+[![Build Status](https://img.shields.io/travis/:vendor/:package_name/master.svg?style=flat-square)](https://travis-ci.org/:vendor/:package_name)
+[![Quality Score](https://img.shields.io/scrutinizer/g/:vendor/:package_name.svg?style=flat-square)](https://scrutinizer-ci.com/g/:vendor/:package_name)
+[![Total Downloads](https://img.shields.io/packagist/dt/:vendor/:package_name.svg?style=flat-square)](https://packagist.org/packages/:vendor/:package_name)
 
 **Note:** Replace these variables in all files of the project and delete this paragraph:
  - `:author_name` (example: 'Freek Van der Herten')
@@ -11,6 +11,7 @@
  - `:author_email` (example: 'freek@spatie.be')
  - `:package_name` (example: 'nova-tail-tool')
  - `:package_description` (example: 'A tool to tail the log')
+ - `:vendor` (example: 'spatie')
  
 
 This is where your description should go. Try and limit it to a paragraph or two.
@@ -22,7 +23,7 @@ Add a screenshot of the tool here.
 You can install the package in to a Laravel app that uses [Nova](https://nova.laravel.com) via composer:
 
 ```bash
-composer require spatie/nova-tail-tool
+composer require :vendor/:package_name
 ```
 
 Next up, you must register the tool with Nova. This is typically done in the `register` method of the `NovaServiceProvider`.

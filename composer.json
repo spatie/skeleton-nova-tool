@@ -1,6 +1,6 @@
 {
-    "name": "spatie/nova-tail-tool",
-    "description": "A Laravel Nova tool to display the application log.",
+    "name": ":vendor/:package_name",
+    "description": ":package_description",
     "keywords": [
         "laravel",
         "nova"
@@ -11,7 +11,7 @@
             "url": "../laravel-nova"
         }
     ],
-    "homepage": "https://github.com/spatie/nova-tail-tool",
+    "homepage": "https://github.com/:vendor/:package_name",
     "license": "MIT",
     "authors": [
         {
