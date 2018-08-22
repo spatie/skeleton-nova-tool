@@ -11,7 +11,7 @@ class Authorize
 {
     public function handle(Request $request, Closure $next): Response
     {
-        return app(:namespace_tool_name::class)->authorize($request)
+        return app(Tool::class)->authorize($request)
             ? $next($request)
             : abort(403);
     }
