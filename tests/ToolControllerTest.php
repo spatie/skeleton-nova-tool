@@ -9,26 +9,10 @@ use Symfony\Component\HttpFoundation\Response;
 class ToolControllerTest extends TestCase
 {
     /** @test */
-    public function it_will_return_hello_world()
+    public function it_can_can_return_a_response()
     {
         $this
-            ->postJson('nova-vendor/spatie/tail-tool')
-            ->assertSuccessful()
-            ->assertJson([
-                'text' => '',
-                'lastRetrievedLineNumber' => 10,
-            ]);
-    }
-
-    /** @test */
-    public function it_can_start_from_a_specific_line()
-    {
-        $this
-            ->postJson('nova-vendor/spatie/tail-tool', ['afterLineNumber' => 8])
-            ->assertSuccessful()
-            ->assertJson([
-                'text' => 'nine' . PHP_EOL . 'ten' . PHP_EOL,
-                'lastRetrievedLineNumber' => 10,
-            ]);
+            ->get('nova-vendor/:vendor/:package_name')
+            ->assertSuccessful();
     }
 }
