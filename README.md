@@ -46,7 +46,7 @@ public function register()
 
 ## Usage
 
-Click on the "Application log" menu item in your Nova app to see the log.
+Click on the ":package_name" menu item in your Nova app to see the tool provided by this package.
 
 ### Testing
 
