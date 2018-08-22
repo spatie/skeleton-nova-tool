@@ -18,7 +18,7 @@ Next replace these variables in all files of the project and delete this paragra
  To use the tool in a Nova app add this line in the `require` section of `composer.json`.
  
  ```
-    "spatie/:package_name": "*",
+    ":vendor/:package_name": "*",
 ```
  
  In your Nova app add a `repositiories` section to the `composer.json` with the path to your package repo.
