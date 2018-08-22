@@ -27,7 +27,7 @@ Next replace these variables in all files of the project and delete this paragra
      "repositories": [
          {
              "type": "path",
-             "url": "../your-new-package-repo"
+             "url": "../:package_name"
          },
 ```
  
