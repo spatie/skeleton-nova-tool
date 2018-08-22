@@ -14,17 +14,17 @@ Next replace these variables in all files of your repo:
  - `:vendor` (example: 'spatie')
  - `:namespace_vendor` (example: 'Spatie')
  - `:namespace_tool_name` (example: 'TailTool')
-
+ 
  Next run `composer install`, `yarn` and `yarn production`.
-
+ 
  To use the tool in a Nova app add this line in the `require` section of `composer.json`.
-
+ 
  ```
     ":vendor/:package_name": "*",
 ```
-
+ 
  In your Nova app add a `repositiories` section to the `composer.json` with the path to your package repo.
-
+ 
  ```
      "repositories": [
          {
@@ -32,9 +32,9 @@ Next replace these variables in all files of your repo:
              "url": "../:package_name"
          },
 ```
-
-Now you're ready to develop your package inside a Nova app.
-
+ 
+Now you're ready to develop your package inside a Nova app. 
+ 
 **When you are done with the steps above delete everything above!**
 
 # :package_description
@@ -60,7 +60,7 @@ composer require :vendor/:package_name
 Next up, you must register the tool with Nova. This is typically done in the `tools` method of the `NovaServiceProvider`.
 
 ```php
-// in app/Providers/NovaServiceProvider.php
+// in app/Providers/NovaServiceProvder.php
 
 // ...
 
@@ -111,7 +111,7 @@ We publish all received postcards [on our company website](https://spatie.be/en/
 
 Spatie is a webdesign agency based in Antwerp, Belgium. You'll find an overview of all our open source projects [on our website](https://spatie.be/opensource).
 
-Does your business depend on our contributions? Reach out and support us on [Patreon](https://www.patreon.com/spatie).
+Does your business depend on our contributions? Reach out and support us on [Patreon](https://www.patreon.com/spatie). 
 All pledges will be dedicated to allocating workforce on maintenance and new awesome stuff.
 
 ## License
