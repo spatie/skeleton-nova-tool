@@ -1,8 +1,6 @@
 
 ## Using this skeleton (remove this section after you have completed these steps)
 
-**To include Nova itself inside your Laravel app, please head over to the [Installing Nova](https://nova.laravel.com/docs/1.0/installation.html#installing-nova) docs.**
-
 This repo contains a skelton to easily create Nova Tool packages. It contains a few niceties not present in the default Nova Tool scaffolding.
 
 First clone this repo to your development machine and remove the `.git` directory. Next run `git init` to create another repo. Create a new repo on GitHub (or another source control saas) and point the origin remote of your cloned repo to the one you just created. Here's an example: `git remote add origin git@github.com:spatie/newly-created-repo.git`. Commit all files and push to master.
@@ -19,7 +17,9 @@ Next replace these variables in all files of your repo:
  
  Next run `composer install`, `yarn` and `yarn production`.
  
- To use your customized package in a Laravel/Nova app, add this line in the `require` section of the `composer.json` file:
+If you don't have a Nova app already head over the [nova installation instructions](https://nova.laravel.com/docs/1.0/installation.html#installing-nova).
+
+To use your customized package in a Nova app, add this line in the `require` section of the `composer.json` file:
  
  ```
     ":vendor/:package_name": "*",
@@ -35,7 +35,7 @@ Next replace these variables in all files of your repo:
          },
 ```
  
-Now you're ready to develop your package inside a Laravel/Nova app.
+Now you're ready to develop your package inside a Nova app.
  
 **When you are done with the steps above delete everything above!**
 
