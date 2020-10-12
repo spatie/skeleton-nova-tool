@@ -2,7 +2,7 @@
 
 ## Support us
 
-[![Image](https://github-ads.s3.eu-central-1.amazonaws.com/skeleton-nova-tool.jpg)](https://spatie.be/github-ad-click/skeleton-nova-tool)
+[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/skeleton-nova-tool.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/skeleton-nova-tool)
 
 We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
 
