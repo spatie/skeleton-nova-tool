@@ -10,18 +10,25 @@
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
         "check-format": "prettier --list-different 'resources/**/*.{css,js,vue}'",
         "format": "prettier --write 'resources/**/*.{css,js,vue}'",
-        "lint": "eslint resources/js --fix --ext js,vue"
+        "lint": "eslint resources/js --fix --ext js,vue",
+        "prepare": "husky install"
     },
     "devDependencies": {
         "cross-env": "^5.0.0",
         "eslint": "^4.19.1",
         "eslint-config-prettier": "^2.9.0",
         "eslint-plugin-vue": "^4.4.0",
+        "husky": ">=6",
         "laravel-mix": "^1.0",
+        "lint-staged": ">=10",
         "prettier": "^2.5.0"
     },
     "dependencies": {
         "animated-scroll-to": "^1.2.2",
         "vue": "^2.6.14"
+    },
+    "lint-staged": {
+        "*.{js,vue}": "eslint --cache --fix",
+        "*.{css,js,vue}": "prettier --write"
     }
 }
