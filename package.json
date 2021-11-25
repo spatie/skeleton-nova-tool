@@ -18,10 +18,10 @@
         "eslint-config-prettier": "^2.9.0",
         "eslint-plugin-vue": "^4.4.0",
         "laravel-mix": "^1.0",
-        "prettier": "^1.14.0"
+        "prettier": "^2.5.0"
     },
     "dependencies": {
         "animated-scroll-to": "^1.2.2",
-        "vue": "^2.5.0"
+        "vue": "^2.6.14"
     }
 }
