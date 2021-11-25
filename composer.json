@@ -1,6 +1,6 @@
 {
-    "name": ":vendor/:package_name",
-    "description": ":package_description",
+    "name": "vendor/package_name",
+    "description": "package_description",
     "keywords": [
         "laravel",
         "nova"
@@ -11,12 +11,12 @@
             "url": "../laravel-nova"
         }
     ],
-    "homepage": "https://github.com/:vendor/:package_name",
+    "homepage": "https://github.com/vendor/package_name",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
+            "name": "author_name",
+            "email": "author_email",
             "role": "Developer"
         }
     ],
@@ -30,18 +30,18 @@
     },
     "autoload": {
         "psr-4": {
-            ":namespace_vendor\\:namespace_tool_name\\": "src/"
+            "namespace_vendor\\namespace_tool_name\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            ":namespace_vendor\\:namespace_tool_name\\Tests\\": "tests"
+            "namespace_vendor\\namespace_tool_name\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                ":namespace_vendor\\:namespace_tool_name\\ToolServiceProvider"
+                "namespace_vendor\\namespace_tool_name\\ToolServiceProvider"
             ]
         }
     },

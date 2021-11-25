@@ -1,10 +1,10 @@
 <?php
 
-namespace :namespace_vendor\:namespace_tool_name\Tests;
+namespace amespace_vendor\namespace_tool_name\Tests;
 
 use Illuminate\Support\Facades\Route;
 use Orchestra\Testbench\TestCase as Orchestra;
-use :namespace_vendor\:namespace_tool_name\ToolServiceProvider;
+use amespace_vendor\namespace_tool_name\ToolServiceProvider;
 
 abstract class TestCase extends Orchestra
 {
