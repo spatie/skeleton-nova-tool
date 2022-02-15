@@ -1,3 +1,6 @@
 let mix = require('laravel-mix')
 
-mix.js('resources/js/tool.js', 'dist/js');
+require('./mix')
+
+mix.js('resources/js/tool.js', 'dist/js')
+  .nova(':vendor/:package_name');
