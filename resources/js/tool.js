@@ -3,7 +3,7 @@ Nova.booting((Vue, router) => {
         {
             name: ':package_name',
             path: '/:package_name',
-            component: require('./components/Tool'),
+            component: require('./components/Tool').default,
         },
     ])
 })
