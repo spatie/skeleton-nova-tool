@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Head title="{{ class }}" />
+    <Head title="{{ title }}" />
 
     <Heading class="mb-6">{{ title }}</Heading>
 
