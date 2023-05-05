@@ -21,8 +21,9 @@
         }
     ],
     "require": {
-        "php": ">=7.1.0",
-        "laravel/nova": "*"
+        "php": ">=8.0",
+        "laravel/nova": "*",
+        "ext-readline": "*"
     },
     "require-dev": {
         "orchestra/testbench": "^3.6",
